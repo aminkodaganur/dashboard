@@ -1,0 +1,22 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100%; 
+	margin:0;
+}
+
+.align-right{
+	text-align: right;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clear--both{
+	clear:both;
+}
+
+.mobi-hide-elem{
+	display: none;
+	transition: 0.6s ease;
+}

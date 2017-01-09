@@ -1,0 +1,57 @@
+.page{
+	@include fill-parent();
+	@include row(table);
+
+	.side__bar{
+		&.desk{
+			@include span-columns(2.3);
+			transition: 0.5s ease;
+		}
+	}
+
+	.dashboard__container{
+		&.desk{
+			@include span-columns(9.7);
+			transition: 0.5s ease;			
+		}
+		height: 100vh;
+		background-color: $grey_color;
+
+		.dashboard__elements{
+			padding: 35px 20px;
+			padding-bottom: 0px;
+			width: 100%
+		}
+	}
+}
+
+.mobi-side__bar{
+	@include span-columns(0.7);
+	transition: 0.5s ease;
+
+	.user__avt-container{
+		img{
+			width: 36px;
+			border-radius: 100px;
+		}
+		p{
+			display: none !important;
+		}
+		.tag{
+			display: none !important;
+		}
+	}
+	.menus{
+		.caption{
+			display: none !important;
+		}
+	}
+	.footer{
+		display: none !important;
+	}
+}
+
+.mobi-dashboard__container{
+	@include span-columns(11.3);
+	transition: 0.5s ease;
+}

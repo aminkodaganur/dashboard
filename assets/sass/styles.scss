@@ -1,0 +1,30 @@
+/* Neat grid layout framework */
+@import 'neat/_neat.scss';
+
+/* Custom Mixins */
+@import 'base/_mixins.scss';
+
+/* base folder */
+@import 'base/_variables.scss';
+@import 'base/_imports.scss';
+
+
+
+/* layout styles */
+@import 'layout/_layout-main.scss';
+@import 'layout/_header.scss';
+@import 'layout/_sections.scss';
+
+/* componets */
+@import 'componets/_sidebar.scss';
+@import 'componets/_tag.scss';
+@import 'componets/_scroll.scss';
+@import 'componets/_calender.scss';
+
+/* Effect styles */
+/*@import 'componets/_effects.scss';*/
+
+
+
+@import 'base/_responsive.scss';
+@import 'base/_resets.scss';   
