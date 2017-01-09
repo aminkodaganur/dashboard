@@ -25,9 +25,8 @@ jQuery(document).ready(function($) {
 	});
 });
 
-	window.onresize = function(event) {
-	    var wid = window.innerWidth;
-	    console.log(wid);
+	function resizeMenu(){
+		var wid = window.innerWidth;
 	    if(wid<=1000){
 	    	$('aside').addClass('mobi-side__bar');
 	    	$('.dashboard__container').addClass('mobi-dashboard__container');
@@ -39,5 +38,10 @@ jQuery(document).ready(function($) {
 	    	$('aside').addClass('desk');
 	    	$('.dashboard__container').addClass('desk');    	
 	    }
+	}
+
+	window.onresize = function(event) {
+	    resizeMenu();
 	};
+	resizeMenu();
 
