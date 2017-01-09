@@ -30,10 +30,14 @@ html {
       padding: 35px 20px;
       padding-bottom: 0px;
       width: 100%; }
+      @media screen and (max-width: 850px) {
+        .page .dashboard__container .dashboard__elements {
+          margin-left: 20px; } }
 
 .mobi-side__bar {
   display: table-cell;
   width: 5.83333%;
+  width: 62px;
   transition: 0.5s ease; }
   .mobi-side__bar .user__avt-container img {
     width: 36px;
@@ -90,26 +94,25 @@ section.dashboard__elements .row {
   display: table;
   width: 100%;
   table-layout: fixed;
-  margin-bottom: 25px;
-  width: 100%; }
+  margin-bottom: 25px; }
 section.dashboard__elements .col-span-8 {
   display: table-cell;
   width: 66.66667%;
-  /*@include media($mobile) {
-    @include span-columns(3);
-  }*/ }
-  @media only screen and (max-width: 768px) {
+  /*@media only screen and (max-width: 768px) {  width:100% !important;  }*/ }
+  @media screen and (max-width: 850px) {
     section.dashboard__elements .col-span-8 {
-      width: 100% !important; } }
+      margin-top: 20px;
+      width: 100%;
+      display: block; } }
 section.dashboard__elements .col-span-4 {
   display: table-cell;
   width: 33.33333%;
-  /*@include media($mobile) {
-    @include span-columns(3);
-  }*/ }
-  @media only screen and (max-width: 768px) {
+  /*@media only screen and (max-width: 768px) {  width:100% !important;  }*/ }
+  @media screen and (max-width: 850px) {
     section.dashboard__elements .col-span-4 {
-      width: 100% !important; } }
+      margin-top: 20px;
+      width: 100%;
+      display: block; } }
 section.dashboard__elements .list__box--container {
   background-color: #ffffff;
   /*height: 245px;*/

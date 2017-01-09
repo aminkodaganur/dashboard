@@ -2,22 +2,25 @@ section.dashboard__elements{
 	.row{
 		@include row(table);
 		margin-bottom: 25px;
-		width: 100%;
 	}
-	$mobile: new-breakpoint(max-width 500px 4);
+	
 	.col-span-8{
 		@include span-columns(8);
-		/*@include media($mobile) {
-		  @include span-columns(3);
-		}*/
-		@media only screen and (max-width: 768px) {  width:100% !important;  }
+		@include media($mobile) {	
+		  margin-top: 20px;	  
+		  width: 100%;
+		  display: block;
+		}
+		/*@media only screen and (max-width: 768px) {  width:100% !important;  }*/
 	}
 	.col-span-4{
 		@include span-columns(4);
-		/*@include media($mobile) {
-		  @include span-columns(3);
-		}*/
-		@media only screen and (max-width: 768px) {  width:100% !important;  }
+		@include media($mobile) {
+		  margin-top: 20px;
+		  width: 100%;		  
+		  display: block;
+		}
+		/*@media only screen and (max-width: 768px) {  width:100% !important;  }*/
 	} 
 	.list__box--container{
 		background-color: $white_color;

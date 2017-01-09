@@ -20,13 +20,18 @@
 		.dashboard__elements{
 			padding: 35px 20px;
 			padding-bottom: 0px;
-			width: 100%
+			width: 100%;
+			@include media($mobile) {
+				margin-left: 20px; 
+			}
 		}
+
 	}
 }
 
 .mobi-side__bar{
 	@include span-columns(0.7);
+	width:62px;
 	transition: 0.5s ease;
 
 	.user__avt-container{
